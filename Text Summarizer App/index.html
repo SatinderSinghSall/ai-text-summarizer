@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AI Text Summarizer</title>
+
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">AI Text Summarizer</div>
+
+      <a
+        class="portfolio-link"
+        href="https://satinder-portfolio.vercel.app/"
+        target="_blank"
+      >
+        Developer Portfolio
+      </a>
+    </header>
+
+    <section class="main-section">
+      <div class="container">
+        <div class="app-grid">
+          <!-- LEFT SIDE -->
+
+          <div class="input-panel">
+            <h1>Text Summarizer</h1>
+
+            <h3>Using HuggingFace Transformer</h3>
+
+            <p>Paste your content below for quick summarization.</p>
+
+            <form id="summarization-form">
+              <textarea
+                id="dialogue-input"
+                placeholder="Paste your text here..."
+                required
+              ></textarea>
+
+              <button type="button" id="summarize-btn">Summarize Now</button>
+            </form>
+          </div>
+
+          <!-- RIGHT SIDE -->
+
+          <div class="output-panel">
+            <div id="summary-output">
+              <h3 id="summary-heading">Content Summary</h3>
+
+              <p id="summary-text">Your summarized content will appear here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="credit">Developed by Satinder Singh</div>
+
+      <div class="footer-links">
+        <a href="https://github.com/SatinderSinghSall" target="_blank">
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/satinder-singh-sall-b62049204/"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </footer>
+
+    <!-- PREMIUM ERROR MODAL -->
+
+    <div id="error-modal" class="modal">
+      <div class="modal-box">
+        <span class="close-modal" id="close-modal">&times;</span>
+
+        <div class="modal-icon">⚠️</div>
+
+        <h2>Something went wrong</h2>
+
+        <p id="error-message">Unable to process your request.</p>
+
+        <button class="modal-btn" id="modal-ok">Okay</button>
+      </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
