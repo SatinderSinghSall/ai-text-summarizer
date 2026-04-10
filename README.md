@@ -33,7 +33,7 @@ It demonstrates the **complete ML lifecycle**, from training to deployment:
 
 ![App UI](https://via.placeholder.com/900x400.png?text=Text+Summarizer+UI)
 
-> 💡 Replace this with your actual screenshot (`index.html` UI)
+> 💡 Coming Soon...
 
 ---
 
